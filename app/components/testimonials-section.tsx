@@ -34,6 +34,27 @@ export default function TestimonialsSection() {
       image: '/testimonial1.jpg',
       quote: "Icon Uno's media coverage of our product launch was exceptional.",
     },
+
+    {
+      name: 'John Doe',
+      company: 'Tech Innovators Inc.',
+      image: '/testimonial1.jpg',
+      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+    },
+
+    {
+      name: 'John Doe',
+      company: 'Tech Innovators Inc.',
+      image: '/testimonial1.jpg',
+      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+    },
+
+    {
+      name: 'John Doe',
+      company: 'Tech Innovators Inc.',
+      image: '/testimonial1.jpg',
+      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+    },
     // more testimonials...
   ]
 
@@ -67,7 +88,7 @@ export default function TestimonialsSection() {
                   className="rounded-full mr-4"
                 />
                 <div>
-                  <h3 className="font-bold">{testimonial.name}</h3>
+                  <h3 className="font-bold  text-gray-800">{testimonial.name}</h3>
                   <p className="text-sm text-gray-600">{testimonial.company}</p>
                 </div>
               </div>

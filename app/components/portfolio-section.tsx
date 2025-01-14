@@ -32,7 +32,7 @@ export default function PortfolioSection() {
 
   return (
     <section id="portfolio" className="py-20 text-gray-800">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 text-white">
         <motion.h2
           className="text-3xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
