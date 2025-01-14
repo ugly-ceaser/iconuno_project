@@ -18,21 +18,21 @@ export default function TestimonialsSection() {
       name: 'John Doe',
       company: 'Tech Innovators Inc.',
       image: '/testimonial1.jpg',
-      quote: "Icon Uno&apos;s media coverage of our product launch was exceptional.", // Use &apos; to escape single quote
+      quote: "Icon Uno's media coverage of our product launch was exceptional.",
     },
 
     {
-      name: 'Jane Smith',
-      company: 'Creative Solutions Ltd.',
-      image: '/testimonial2.jpg',
-      quote: "Icon Uno&apos;s media coverage of our product launch was exceptional.", // Use &apos; to escape single quote
+      name: 'John Doe',
+      company: 'Tech Innovators Inc.',
+      image: '/testimonial1.jpg',
+      quote: "Icon Uno's media coverage of our product launch was exceptional.",
     },
 
     {
-      name: 'Mary Johnson',
-      company: 'Global Enterprises',
-      image: '/testimonial3.jpg',
-      quote: "Icon Uno&apos;s media coverage of our product launch was exceptional.", // Use &apos; to escape single quote
+      name: 'John Doe',
+      company: 'Tech Innovators Inc.',
+      image: '/testimonial1.jpg',
+      quote: "Icon Uno's media coverage of our product launch was exceptional.",
     },
     // more testimonials...
   ]
@@ -71,7 +71,7 @@ export default function TestimonialsSection() {
                   <p className="text-sm text-gray-600">{testimonial.company}</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">"{testimonial.quote.replace(/"/g, '&quot;')}"</p> {/* Escape double quotes */}
+              <p className="text-gray-700 italic">&quot;{testimonial.quote}&quot;</p> {/* Escape double quotes */}
             </motion.div>
           ))}
         </div>
