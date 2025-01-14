@@ -36,7 +36,7 @@ export default function AboutSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          At Icon Uno, we specialize in strategic communication, brand management, and media relations to drive success in today's ever-changing market.
+          At Icon Uno, we specialize in strategic communication, brand management, and media relations to drive success in today&apos;s ever-changing market.
         </motion.p>
         <div className="flex overflow-x-auto hide-scrollbar pb-8">
           {milestones.length > 0 ? (
