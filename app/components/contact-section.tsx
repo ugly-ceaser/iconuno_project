@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ParallaxBanner } from 'react-scroll-parallax'
 import { Button } from './ui/button'
 
 export default function ContactSection() {
