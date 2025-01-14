@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ParallaxBanner } from 'react-scroll-parallax'  // This uses createContext
 import Image from 'next/image'
 
