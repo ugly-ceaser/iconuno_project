@@ -38,7 +38,7 @@ export default function AboutSection() {
         >
           At Icon Uno, we specialize in strategic communication, brand management, and media relations to drive success in today's ever-changing market.
         </motion.p>
-        <div className="flex overflow-x-scroll pb-8 hide-scrollbar">
+        <div className="flex overflow-x-auto hide-scrollbar pb-8">
           {milestones.length > 0 ? (
             milestones.map((milestone, index) => (
               <motion.div
