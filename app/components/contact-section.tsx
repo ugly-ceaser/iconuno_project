@@ -64,7 +64,7 @@ export default function ContactSection() {
                 required
               ></textarea>
             </div>
-            <Button type="submit" variant="default">
+            <Button type="submit" variant="default" className=" hover:bg-white hover:text-gray-800">
               Send Message
             </Button>
           </motion.form>
@@ -75,11 +75,9 @@ export default function ContactSection() {
             initial={{ opacity: 0, x: 20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <ParallaxBanner
-              layers={[{ image: '/images/hero-bg.jpg', speed: -15 }]}
-              className="h-full w-full rounded-lg overflow-hidden"
-            />
+            >
+            {/* Replace with your SVG file */}
+            <object data="/images/contactUs.svg" type="image/svg+xml" className="h-full w-full" />
           </motion.div>
         </div>
       </div>

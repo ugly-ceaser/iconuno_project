@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Camera, Video, Image } from 'lucide-react'
+import { Megaphone, Briefcase, Globe, Edit, Camera, Video } from 'lucide-react'
 
 export default function ServicesSection() {
   const [ref, inView] = useInView({
@@ -11,9 +11,36 @@ export default function ServicesSection() {
   })
 
   const services = [
-    { icon: Camera, title: 'Event Coverage', description: 'Comprehensive media coverage for all types of events.' },
-    { icon: Video, title: 'Media Production', description: 'High-quality video production for various purposes.' },
-    { icon: Image, title: 'Image Management', description: 'Efficient organization and management of your visual assets.' },
+    {
+      icon: Megaphone,
+      title: 'Strategic Communication',
+      description: 'Crafting impactful communication strategies to elevate your brand.',
+    },
+    {
+      icon: Briefcase,
+      title: 'Media Relations',
+      description: 'Building strong relationships with media outlets to amplify your message.',
+    },
+    {
+      icon: Globe,
+      title: 'Brand Management',
+      description: 'Ensuring your brand stays consistent, relevant, and trusted in the market.',
+    },
+    {
+      icon: Camera,
+      title: 'Event Management',
+      description: 'Organizing and executing events to create lasting impressions.',
+    },
+    {
+      icon: Edit,
+      title: 'Content Creation',
+      description: 'Delivering compelling written, visual, and video content to engage your audience.',
+    },
+    {
+      icon: Video,
+      title: 'Crisis Management',
+      description: 'Proactive and reactive strategies to protect your reputation in challenging times.',
+    },
   ]
 
   return (
@@ -48,4 +75,3 @@ export default function ServicesSection() {
     </section>
   )
 }
-

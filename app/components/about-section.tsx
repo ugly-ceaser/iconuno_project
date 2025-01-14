@@ -10,10 +10,12 @@ export default function AboutSection() {
   })
 
   const milestones = [
-    { year: 2010, title: 'Founded' },
-    { year: 2015, title: 'Expanded to 5 countries' },
-    { year: 2018, title: 'Launched AI-powered image management' },
-    { year: 2022, title: 'Reached 1000+ clients worldwide' },
+    { year: 2010, title: 'Founded as Icon Uno' },
+    { year: 2013, title: 'Established strategic partnerships' },
+    { year: 2016, title: 'Expanded services globally' },
+    { year: 2019, title: 'Launched award-winning PR campaigns' },
+    { year: 2021, title: 'Implemented AI-driven media solutions' },
+    { year: 2023, title: 'Became a trusted PR agency for Fortune 500 companies' },
   ]
 
   return (
@@ -34,14 +36,14 @@ export default function AboutSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Our mission is to capture and manage the essence of stories through cutting-edge media solutions.
+          At Icon Uno, we specialize in strategic communication, brand management, and media relations to drive success in today's ever-changing market.
         </motion.p>
-        <div className="flex overflow-x-auto pb-8">
+        <div className="flex overflow-x-scroll pb-8 hide-scrollbar">
           {milestones.length > 0 ? (
             milestones.map((milestone, index) => (
               <motion.div
-                key={milestone.year} // Changed to year to avoid using index as key
-                className="flex-shrink-0 w-64 mx-4 bg-white p-6 rounded-lg shadow-md "
+                key={milestone.year}
+                className="flex-shrink-0 w-64 mx-4 bg-white p-6 rounded-lg shadow-md"
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
