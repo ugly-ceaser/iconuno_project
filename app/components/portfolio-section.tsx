@@ -6,15 +6,24 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import { Button } from './ui/button';
 
+// Define the Project type
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+}
+
 export default function PortfolioSection() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
-  const [selectedProject, setSelectedProject] = useState(null);
+  // Set the state to be either a Project or null
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const projects = [
+  const projects: Project[] = [
     { id: 1, title: 'Global Tech Summit', image: '/images/project1.jpg', description: 'Comprehensive media coverage for a major tech event.' },
     { id: 2, title: 'Nature Documentary', image: '/images/project2.jpg', description: 'Award-winning documentary showcasing wildlife conservation efforts.' },
     { id: 3, title: 'Fashion Week', image: '/images/project3.jpg', description: 'High-end photography and video production for a prestigious fashion event.' },
