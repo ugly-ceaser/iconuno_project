@@ -18,21 +18,21 @@ export default function TestimonialsSection() {
       name: 'John Doe',
       company: 'Tech Innovators Inc.',
       image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      quote: "Icon Uno&apos;s media coverage of our product launch was exceptional.", // Escape single quote
     },
 
     {
-      name: 'John Doe',
-      company: 'Tech Innovators Inc.',
-      image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      name: 'Jane Smith',
+      company: 'Creative Solutions Ltd.',
+      image: '/testimonial2.jpg',
+      quote: "Icon Uno&apos;s media coverage of our product launch was exceptional.", // Escape single quote
     },
 
     {
-      name: 'John Doe',
-      company: 'Tech Innovators Inc.',
-      image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      name: 'Mary Johnson',
+      company: 'Global Enterprises',
+      image: '/testimonial3.jpg',
+      quote: "Icon Uno&apos;s media coverage of our product launch was exceptional.", // Escape single quote
     },
     // more testimonials...
   ]
