@@ -46,7 +46,7 @@ export default function PortfolioSection() {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+              className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer focus-within:opacity-100"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
@@ -62,7 +62,7 @@ export default function PortfolioSection() {
                 className="w-full h-64 object-cover"
                 priority={index < 2} // Load first two images with priority
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 focus-within:opacity-100">
                 <h3 className="text-white text-xl font-bold text-center">{project.title}</h3>
                 <Button 
                   className="mt-4 md:hidden" 
