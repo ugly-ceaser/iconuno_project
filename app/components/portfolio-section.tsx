@@ -64,6 +64,13 @@ export default function PortfolioSection() {
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <h3 className="text-white text-xl font-bold text-center">{project.title}</h3>
+                <Button 
+                  className="mt-4 md:hidden" 
+                  onClick={() => setSelectedProject(project)}
+                  aria-label={`View details for ${project.title}`}
+                >
+                  View Details
+                </Button>
               </div>
             </motion.div>
           ))}
