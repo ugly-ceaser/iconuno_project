@@ -92,7 +92,7 @@ export default function PortfolioSection() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
           >
-            <h3 id="modal-title" className="text-2xl font-bold mb-4">
+            <h3 id="modal-title" className="text-2xl font-bold mb-4 text-white">
               {selectedProject.title}
             </h3>
             <Image
@@ -102,10 +102,10 @@ export default function PortfolioSection() {
               height={600}
               className="w-full h-auto mb-4 rounded-lg"
             />
-            <p id="modal-description" className="text-gray-600 mb-4">
+            <p id="modal-description" className="text-gray-600 mb-4 text-white">
               {selectedProject.description}
             </p>
-            <Button variant="secondary" onClick={() => setSelectedProject(null)}>
+            <Button variant="secondary" className='text-white' onClick={() => setSelectedProject(null)}>
               Close
             </Button>
           </motion.div>
