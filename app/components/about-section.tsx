@@ -46,8 +46,8 @@ export default function AboutSection() {
                 className="flex-shrink-0 w-64 mx-4 bg-white p-6 rounded-lg shadow-md"
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.8, delay: 0.1 + index * 0.1 }}
+                whileHover={{ scale: 1.05, rotate: 4 }}
               >
                 <h3 className="text-2xl font-bold mb-2 text-gray-800">{milestone.year}</h3>
                 <p className="text-gray-600">{milestone.title}</p>

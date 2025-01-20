@@ -20,40 +20,35 @@ export default function TestimonialsSection() {
       image: '/testimonial1.jpg',
       quote: "Icon Uno's media coverage of our product launch was exceptional.",
     },
-
     {
-      name: 'John Doe',
-      company: 'Tech Innovators Inc.',
-      image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      name: 'Jane Smith',
+      company: 'Creative Solutions LLC',
+      image: '/testimonial2.jpg',
+      quote: "The team at Icon Uno exceeded our expectations.",
     },
-
     {
-      name: 'John Doe',
-      company: 'Tech Innovators Inc.',
-      image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      name: 'Alice Johnson',
+      company: 'Innovatech',
+      image: '/testimonial3.jpg',
+      quote: "Their attention to detail made all the difference.",
     },
-
     {
-      name: 'John Doe',
-      company: 'Tech Innovators Inc.',
-      image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      name: 'Bob Brown',
+      company: 'Future Tech',
+      image: '/testimonial4.jpg',
+      quote: "We saw a significant increase in engagement after the campaign.",
     },
-
     {
-      name: 'John Doe',
-      company: 'Tech Innovators Inc.',
-      image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      name: 'Charlie Davis',
+      company: 'NextGen Media',
+      image: '/testimonial5.jpg',
+      quote: "Icon Uno's creativity is unmatched in the industry.",
     },
-
     {
-      name: 'John Doe',
-      company: 'Tech Innovators Inc.',
-      image: '/testimonial1.jpg',
-      quote: "Icon Uno's media coverage of our product launch was exceptional.",
+      name: 'Diana Prince',
+      company: 'Global Enterprises',
+      image: '/testimonial6.jpg',
+      quote: "A fantastic experience from start to finish.",
     },
     // more testimonials...
   ]
@@ -88,11 +83,11 @@ export default function TestimonialsSection() {
                   className="rounded-full mr-4"
                 />
                 <div>
-                  <h3 className="font-bold  text-gray-800">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-600">{testimonial.company}</p>
+                  <h3 className="font-bold  text-white-800">{testimonial.name}</h3>
+                  <p className="text-sm text-white-800">{testimonial.company}</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">&quot;{testimonial.quote}&quot;</p> {/* Escape double quotes */}
+              <p className="text-white-800 italic">&quot;{testimonial.quote}&quot;</p> {/* Escape double quotes */}
             </motion.div>
           ))}
         </div>

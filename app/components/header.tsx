@@ -1,16 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 0);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -18,7 +19,7 @@ export default function Header() {
   return (
     <motion.header
       className={`fixed w-full z-50 transition-colors duration-300 ${
-        isScrolled ? 'bg-white/80 backdrop-blur-md' : 'bg-transparent'
+        isScrolled ? 'bg-white/80 backdrop-blur-md text-gray-800' : 'bg-transparent'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -27,18 +28,22 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4 sm:px-6 md:px-8 flex justify-between items-center">
         <Link
           href="/#Hero"
-          className="text-2xl sm:text-[10px] md:text-lg font-bold text-gray-800"
+          className={`text-2xl font-bold transition-colors ${
+            isScrolled ? 'text-gray-800' : 'text-white'
+          } hover:text-gray-600`}
         >
           Icon Uno
         </Link>
 
         <nav>
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-6 justify-center">
             {['About', 'Portfolio', 'Services', 'Contact'].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="text-gray-600 hover:text-gray-800 transition-colors"
+                  className={`transition-colors ${
+                    isScrolled ? 'text-gray-800' : 'text-white'
+                  } hover:text-gray-600`}
                 >
                   {item}
                 </a>

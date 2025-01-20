@@ -63,7 +63,9 @@ export default function ContactSection() {
                 required
               ></textarea>
             </div>
-            <Button type="submit" variant="default" className=" hover:bg-white hover:text-gray-800">
+            <Button type="submit" variant="default" className="font-semibold bg-gray-900 text-white border-2 border-gray-900 hover:bg-white hover:text-gray-900 transition-all duration-300 
+                        sm:text-2xl sm:px-8 sm:py-4 
+                        md:text-xl md:px-6 md:py-3">
               Send Message
             </Button>
           </motion.form>
