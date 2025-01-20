@@ -37,7 +37,7 @@ export default function HeroSection() {
                         sm:text-2xl sm:px-8 sm:py-4 
                         md:text-xl md:px-6 md:py-3"
                     >
-                      Let's Work Together
+                      Let&apos;s Work Together
                     </Button>
                   </Link>
                 </div>
